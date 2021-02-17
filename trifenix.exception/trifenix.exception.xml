@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>trifenix.exception</name>
+    </assembly>
+    <members>
+        <member name="T:trifenix.exception.CustomException">
+            <summary>
+            Clase encargada de generar mensaje de excepcion
+            </summary>
+        </member>
+        <member name="M:trifenix.exception.CustomException.#ctor">
+            <summary>
+            Constructor de mensaje de excepcion
+            </summary>
+        </member>
+        <member name="M:trifenix.exception.CustomException.#ctor(System.String)">
+            <summary>
+            Funcion encargada mostrar mensaje especifico
+            </summary>
+            <param name="mensaje">mensaje custom</param>
+        </member>
+        <member name="M:trifenix.exception.CustomException.#ctor(System.String,System.Exception)">
+            <summary>
+            Funcion encargada mostrar mensaje especifico
+            </summary>
+            <param name="message">mensaje custom</param>
+            <param name="innerException"></param>
+        </member>
+        <member name="M:trifenix.exception.CustomException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>
