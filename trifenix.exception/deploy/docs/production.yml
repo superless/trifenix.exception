@@ -33,14 +33,14 @@ steps:
 - script: |      
     sudo apt install -y unzip
     wget https://scripts.trifenix.io/vsxmd/Vsxmd.$(vsxmd-version-production).zip
-    unzip Vsxmd.$(vsxmd-version-production).zip -d ./vsxmd.$(vsxmd-version-production)    
+    unzip Vsxmd.$(vsxmd-version-production).zip -d ./vsxmd.$(vsxmd-version-production)
+    echo ./$(folder)$(name-project).xml
+    cat ./$(folder)$(name-project).xml
     dotnet ./vsxmd.$(vsxmd-version-production)/Vsxmd.dll ./$(folder)$(name-project).xml nuget-packages
     git config --global user.email "devops@trifenix.io"
     git config --global user.name "devops"    
     git clone https://alejandro.iglesias:$(script-token)@github.com/trifenix/docs-trifenix-connect.git web
     
-    cd trifenix.exception
-    ls -l
     cp -r ./$(folder)nuget-packages/* ./web/src/pages/nuget-packages
     cd ./web
     git add . && git commit -m 'nueva documentacion mdm' 
