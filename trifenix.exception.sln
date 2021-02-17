@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exception", "Exception", "{CBDFC6B7-915D-4A56-A0B7-3F2D7075866C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trifenix.exception", "trifenix.exception\trifenix.exception.csproj", "{710DFDC7-1344-4F07-BDC3-1588547EF741}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{710DFDC7-1344-4F07-BDC3-1588547EF741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710DFDC7-1344-4F07-BDC3-1588547EF741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710DFDC7-1344-4F07-BDC3-1588547EF741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710DFDC7-1344-4F07-BDC3-1588547EF741}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{710DFDC7-1344-4F07-BDC3-1588547EF741} = {CBDFC6B7-915D-4A56-A0B7-3F2D7075866C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D7C85E4-96A2-4052-A819-E7BBC01C3574}
+	EndGlobalSection
+EndGlobal
