@@ -19,14 +19,14 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/**/*.csproj'
+    projects: '**/*.csproj'
     feedsToUse: 'select'
     vstsFeed: '$(default-feed)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/**/*.csproj'
+    projects: '**/*.csproj'
   displayName: "build solution"
 
 
@@ -38,6 +38,7 @@ steps:
     git config --global user.email "devops@trifenix.io"
     git config --global user.name "devops"    
     git clone https://alejandro.iglesias:$(script-token)@github.com/trifenix/docs-trifenix-connect.git web
+    ls -l
     cp -r ./$(folder)nuget-packages/* ./web/src/pages/nuget-packages
     cd ./web
     git add . && git commit -m 'nueva documentacion mdm' 
