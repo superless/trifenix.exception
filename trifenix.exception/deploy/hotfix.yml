@@ -1,4 +1,4 @@
-﻿# veamos un nuevo hotfix
+# veamos un nuevo hotfix
 trigger:
     branches:
       include:        
