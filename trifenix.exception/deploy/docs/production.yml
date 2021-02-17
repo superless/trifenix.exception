@@ -13,20 +13,20 @@ variables:
   BuildConfiguration: 'release'
   # nombre del archivo csproj
   name-project: "trifenix.exception"
-  folder: ""
+  folder: "trifenix.exception/trifenix.exception/"
 
 steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/*.csproj'
+    projects: '**/**/*.csproj'
     feedsToUse: 'select'
     vstsFeed: '$(default-feed)'
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/*.csproj'
+    projects: '**/**/*.csproj'
   displayName: "build solution"
 
 
