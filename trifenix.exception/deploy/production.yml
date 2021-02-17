@@ -30,7 +30,7 @@ steps:
   - task: gitversion/execute@0
     inputs:
       useConfigFile: true
-      configFilePath: "deploy/gitConfig.yml" 
+      configFilePath: "trifenix.exception/deploy/gitConfig.yml" 
     displayName: "generando la nueva versión"
   
   # toma todos los proyectos que existan además de quien tiene el nuget.
