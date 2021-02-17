@@ -1,55 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Trifenix</Authors>
-    <Company>Trifenix</Company>
-    <owners>trifenix</owners>
-    <Product>trifenix.exception</Product>
-    <PackageTags>https://github.com/trifenix/trifenix.exception/</PackageTags>
-    <RootNamespace>trifenix</RootNamespace>
-    <id>trifenix.exception</id>
-    <title>trifenix.exception</title>
-    <iconUrl>https://logos.trifenix.io/logo.48x48.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <Description>Package de excepciones en trifenix connect</Description>
-    <PackageIcon>logo.png</PackageIcon>
-    <RepositoryUrl>https://github.com/trifenix/trifenix.exception</RepositoryUrl>
-    <copyright>MIT Open Source</copyright>
-      
-    <TargetsForTfmSpecificBuildOutput>
-          $(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage
-    </TargetsForTfmSpecificBuildOutput>
-    <DocumentationFile>trifenix.exception.xml</DocumentationFile>
-    <summary>
-          Excepciones 
-    </summary>
-    <IsPackable>true</IsPackable>
-  </PropertyGroup>
-
-
-
-    <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
-        <ItemGroup>
-            <!-- Filter out unnecessary files -->
-            <_ReferenceCopyLocalPaths Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference')-&gt;WithMetadataValue('PrivateAssets', 'All'))" />
-
-        </ItemGroup>
-
-        <!-- Print batches for debug purposes -->
-        <Message Text="Batch for .nupkg: ReferenceCopyLocalPaths = @(_ReferenceCopyLocalPaths), ReferenceCopyLocalPaths.DestinationSubDirectory = %(_ReferenceCopyLocalPaths.DestinationSubDirectory) Filename = %(_ReferenceCopyLocalPaths.Filename) Extension = %(_ReferenceCopyLocalPaths.Extension)" Importance="High" Condition="'@(_ReferenceCopyLocalPaths)' != ''" />
-
-        <ItemGroup>
-            <!-- Add file to package with consideration of sub folder. If empty, the root folder is chosen. -->
-            <BuildOutputInPackage Include="@(_ReferenceCopyLocalPaths)" TargetPath="%(_ReferenceCopyLocalPaths.DestinationSubDirectory)" />
-        </ItemGroup>
-    </Target>
-
-</Project>
-
-
-<Project Sdk="Microsoft.NET.Sdk">
-
     <ItemGroup>
         <None Include="images\logo.png" Pack="true" PackagePath="" />
     </ItemGroup>
