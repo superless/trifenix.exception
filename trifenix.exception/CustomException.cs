@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace trifenix.exception
 {
+    /// <summary>
+    /// Clase encargada de generar un exception personalizado
+    /// </summary>
     [Serializable]
     public class CustomException : Exception
     {
