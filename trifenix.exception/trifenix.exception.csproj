@@ -16,6 +16,7 @@
     <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/trifenix/trifenix.exception</RepositoryUrl>
     <copyright>MIT Open Source</copyright>
+      
     <TargetsForTfmSpecificBuildOutput>
           $(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage
     </TargetsForTfmSpecificBuildOutput>

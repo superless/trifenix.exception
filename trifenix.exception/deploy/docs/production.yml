@@ -13,7 +13,7 @@ variables:
   BuildConfiguration: 'release'
   # nombre del archivo csproj
   name-project: "trifenix.exception"
-  folder: "trifenix.exception/"
+  folder: ""
 
 steps:
 - task: DotNetCoreCLI@2
@@ -30,7 +30,8 @@ steps:
   displayName: "build solution"
 
 
-- script: |      
+- script: |     
+    cd trifenix.exception
     sudo apt install -y unzip
     wget https://scripts.trifenix.io/vsxmd/Vsxmd.$(vsxmd-version-production).zip
     unzip Vsxmd.$(vsxmd-version-production).zip -d ./vsxmd.$(vsxmd-version-production)
