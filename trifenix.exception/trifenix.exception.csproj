@@ -1,10 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Trifenix</Authors>
+    <Company>Trifenix</Company>
+    <owners>trifenix</owners>
+    <Product>trifenix.exception</Product>
+    <PackageTags>https://github.com/trifenix/trifenix.exception/</PackageTags>
+    <RootNamespace>trifenix</RootNamespace>
+    <id>trifenix.exception</id>
+    <title>trifenix.exception</title>
+    <iconUrl>https://logos.trifenix.io/logo.48x48.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <Description>Package de excepciones en trifenix connect</Description>
     <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/trifenix/trifenix.exception</RepositoryUrl>
+    <copyright>MIT Open Source</copyright>
   </PropertyGroup>
 
   <ItemGroup>

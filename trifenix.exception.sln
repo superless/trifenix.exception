@@ -7,6 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exception", "Exception", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trifenix.exception", "trifenix.exception\trifenix.exception.csproj", "{710DFDC7-1344-4F07-BDC3-1588547EF741}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{92C6BE95-6404-4B96-814A-6C69121EC6AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{47B531E5-509B-436F-BF81-643CEEFE8729}"
+	ProjectSection(SolutionItems) = preProject
+		production.yml = production.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +30,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{710DFDC7-1344-4F07-BDC3-1588547EF741} = {CBDFC6B7-915D-4A56-A0B7-3F2D7075866C}
+		{47B531E5-509B-436F-BF81-643CEEFE8729} = {92C6BE95-6404-4B96-814A-6C69121EC6AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D7C85E4-96A2-4052-A819-E7BBC01C3574}
