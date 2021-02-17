@@ -19,8 +19,9 @@
     <TargetsForTfmSpecificBuildOutput>
           $(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage
     </TargetsForTfmSpecificBuildOutput>
+    <DocumentationFile>trifenix.exception.xml</DocumentationFile>
     <summary>
-          Traducción con google
+          Excepciones 
     </summary>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
