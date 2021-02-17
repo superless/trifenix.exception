@@ -30,14 +30,14 @@ steps:
   - task: gitversion/execute@0
     inputs:
       useConfigFile: true
-      configFilePath: "trifenix.exception/deploy/gitConfig.yml" 
+      configFilePath: "deploy/gitConfig.yml" 
     displayName: "generando la nueva versión"
   
   # toma todos los proyectos que existan además de quien tiene el nuget.
   - task: DotNetCoreCLI@2
     inputs:
       command: 'restore'
-      projects: '**/**/*.csproj'
+      projects: '**/*.csproj'
       feedsToUse: 'select'
       vstsFeed: '$(default-feed)'      
       versioningScheme: byBuildNumber
@@ -48,7 +48,7 @@ steps:
     displayName: 'dotnet pack' 
     inputs: 
       command: pack
-      packagesToPack: '**/**/$(name-project).csproj'       
+      packagesToPack: '**/$(name-project).csproj'       
       arguments: '--configuration $(BuildConfiguration) /p:Version=$(SemVer)' 
       versioningScheme: byEnvVar 
       versionEnvVar: SemVer

@@ -31,7 +31,6 @@ steps:
 
 
 - script: |     
-    cd trifenix.exception
     sudo apt install -y unzip
     wget https://scripts.trifenix.io/vsxmd/Vsxmd.$(vsxmd-version-production).zip
     unzip Vsxmd.$(vsxmd-version-production).zip -d ./vsxmd.$(vsxmd-version-production)
