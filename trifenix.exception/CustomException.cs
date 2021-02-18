@@ -25,7 +25,7 @@ namespace trifenix.exception
         /// <summary>
         /// Funcion encargada mostrar mensaje especifico.
         /// </summary>
-        /// <param name="message">mensaje custom</param>
+        /// <param name="message">mensaje custom.</param>
         /// <param name="innerException"></param>
         public CustomException(string message, Exception innerException) : base(message, innerException)
         {
