@@ -16,7 +16,7 @@ namespace trifenix.exception
         {
         }
         /// <summary>
-        /// Funcion encargada mostrar mensaje especifico
+        /// Funcion encargada mostrar mensaje especifico.
         /// </summary>
         /// <param name="mensaje">mensaje custom</param>
         public CustomException(string mensaje) : base(mensaje)
