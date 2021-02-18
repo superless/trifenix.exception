@@ -10,7 +10,7 @@ namespace trifenix.exception
     public class CustomException : Exception
     {
         /// <summary>
-        /// Constructor de mensaje de excepcion
+        /// Constructor de mensaje de excepcion.
         /// </summary>
         public CustomException()
         {
