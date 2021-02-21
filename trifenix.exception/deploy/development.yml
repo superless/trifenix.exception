@@ -59,11 +59,11 @@ steps:
       projectKey: 'AGROFENIX'
       projectName: 'AGROFENIX'
   # RUN ANALISIS.
-- task: SonarQubeAnalyze@4
-#
-- task: SonarQubePublish@4
-  inputs:
-    pollingTimeoutSec: '300'
+  - task: SonarQubeAnalyze@4
+  #
+  - task: SonarQubePublish@4
+    inputs:
+      pollingTimeoutSec: '300'
   # publica paquete para publicar.
   - task: PublishBuildArtifacts@1
     inputs:
