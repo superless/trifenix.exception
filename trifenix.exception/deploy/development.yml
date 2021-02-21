@@ -27,7 +27,7 @@ steps:
       SonarQube: 'AGROFENIX'
       scannerMode: 'MSBuild'
       projectKey: 'AGROFENIX'
-      projectName: 'AGROFENIX'
+'
 
   - task: gitversion/setup@0
     inputs:
