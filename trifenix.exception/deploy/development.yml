@@ -51,7 +51,19 @@ steps:
       arguments: '--configuration $(BuildConfiguration) /p:Version=$(SemVer)' 
       versioningScheme: byEnvVar 
       versionEnvVar: SemVer
-
+    # configuracion sonar.
+  - task: SonarQubePrepare@4
+    inputs:
+      SonarQube: 'AGROFENIX'
+      scannerMode: 'MSBuild'
+      projectKey: 'AGROFENIX'
+      projectName: 'AGROFENIX'
+  # RUN ANALISIS.
+- task: SonarQubeAnalyze@4
+#
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
   # publica paquete para publicar.
   - task: PublishBuildArtifacts@1
     inputs:
