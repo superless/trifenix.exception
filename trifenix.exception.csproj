@@ -54,10 +54,4 @@
         </ItemGroup>
     </Target>
 
-
-
-    <ItemGroup>
-        <PackageReference Include="trifenix.connect.interfaces" Version="0.8.13" />
-    </ItemGroup>
-
 </Project>
